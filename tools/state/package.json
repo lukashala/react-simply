@@ -1,0 +1,23 @@
+{
+    "name": "@react-simply/state",
+    "version": "1.0.0",
+    "description": "Super simple state management for React apps",
+    "main": "src/index.js",
+    "author": "Luke Hall <luke.hall@header.cz>",
+    "repository": "github:lukashala/react-simply",
+    "license": "MIT",
+    "dependencies": {
+        "prop-types": "^15.6.2",
+        "react": "16.7.0-alpha.2"
+    },
+    "keywords": [
+        "react",
+        "simply",
+        "simple",
+        "state",
+        "state management",
+        "reducer",
+        "functional",
+        "predictable"
+    ]
+}
