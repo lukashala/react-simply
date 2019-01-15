@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 export const StateContext = createContext();
 
-export const StateProvider = props => (
-  <StateContext.Provider value={useReducer(props.reducer, props.defaultState)}>
-    {props.children}
+export const StateProvider = ({ reducer, initialState, children }) => (
+  <StateContext.Provider value={useReducer(reducer, initialState)}>
+    {children}
   </StateContext.Provider>
 );
 
@@ -16,9 +16,9 @@ StateProvider.propTypes = {
   children: PropTypes.node.isRequired,
 
   /**
-   * Object containing default state value.
+   * Object containing initial state value.
    */
-  defaultState: PropTypes.shape({}).isRequired,
+  initialState: PropTypes.shape({}).isRequired,
 
   /**
    *
@@ -28,4 +28,4 @@ StateProvider.propTypes = {
   reducer: PropTypes.func.isRequired
 };
 
-export default () => useContext(StateContext);
+export const getState = () => useContext(StateContext);

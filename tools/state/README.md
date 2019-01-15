@@ -8,7 +8,9 @@ Super simple state management for React apps.
 npm i @react-simply/state
 ```
 
-## Usage example
+## Usage
+
+Read my [State Management with React Hooks and Context API at 10 lines of code!](https://medium.com/simply/state-management-with-react-hooks-and-context-api-at-10-lines-of-code-baf6be8302c) article on Medium or follow these steps:
 
 1. Wrap your React App into `StateProvider`.
 
@@ -25,7 +27,10 @@ const App = () => {
   const reducer = (state, action) => {
     switch (action.type) {
       case 'changeTheme':
-        return { theme: action.newTheme };
+        return {
+          ...state,
+          theme: action.newTheme
+        };
         
       default:
         return state;
@@ -33,7 +38,7 @@ const App = () => {
   };
   
   return (
-    <StateProvider defaultState={initialState} reducer={reducer}>
+    <StateProvider initialState={initialState} reducer={reducer}>
         // App content ...
     </StateProvider>
   );  
@@ -44,23 +49,23 @@ const App = () => {
 `getState` function returns array, where first item is `state` object and second item is `dispatch` function that accepts the `action` as a parameter. 
 
 ```jsx harmony
-import getState from '@react-simply/state';
+import { getState } from '@react-simply/state';
 
-const Button = () => {
+const ThemedButton = () => {
   const [{ theme }, dispatch] = getState();
-
+  
   return (
-    <button
-      style={{ background: theme.primary }}
+    <Button
+      primaryColor={theme.primary}
       onClick={() => dispatch({
         type: 'changeTheme',
         newTheme: { primary: 'blue'}
       })}
     >
       Make me blue!
-    </button>
+    </Button>
   );
 }
 ```
 
-That's it. State management have never been more simple!
+That's it. State management have never been easier!

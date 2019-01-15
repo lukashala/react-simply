@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Tools for simple and effective React developement",
   "author": "Luke Hall <luke.hall@header.cz>",
+  "repository": "github:lukashala/react-simply",
   "license": "MIT",
   "devDependencies": {
     "lerna": "^3.10.5"
