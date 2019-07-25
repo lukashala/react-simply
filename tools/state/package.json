@@ -1,23 +1,35 @@
 {
-    "name": "@react-simply/state",
-    "version": "1.0.2",
-    "description": "Super simple state management for React apps",
-    "main": "src/index.js",
-    "author": "Luke Hall <luke.hall@header.cz>",
-    "repository": "https://github.com/lukashala/react-simply/tree/master/tools/state",
-    "license": "MIT",
-    "dependencies": {
-        "prop-types": "^15.6.2",
-        "react": "16.7.0-alpha.2"
-    },
-    "keywords": [
-        "react",
-        "simply",
-        "simple",
-        "state",
-        "state management",
-        "reducer",
-        "functional",
-        "predictable"
-    ]
+  "name": "@react-simply/state",
+  "version": "1.0.2",
+  "description": "Super simple state management for React apps",
+  "main": "src/index.js",
+  "author": "Luke Hall <luke.hall@header.cz>",
+  "repository": "https://github.com/lukashala/react-simply/tree/master/tools/state",
+  "license": "MIT",
+  "dependencies": {
+    "@testing-library/react": "^8.0.6",
+    "prop-types": "^15.6.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "keywords": [
+    "react",
+    "simply",
+    "simple",
+    "state",
+    "state management",
+    "reducer",
+    "functional",
+    "predictable"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
 }
