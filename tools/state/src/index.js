@@ -28,4 +28,4 @@ StateProvider.propTypes = {
   reducer: PropTypes.func.isRequired
 };
 
-export const getState = () => useContext(StateContext);
+export const useState = () => useContext(StateContext);
