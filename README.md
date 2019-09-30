@@ -7,6 +7,7 @@ Let's make our life easier and fight [Web Developer's Fatigue](https://medium.co
 ## Content
 
 Contains only [state](/tools/state) package at the moment.
+See my article [State Management with React Hooks and Context API in 10 lines of code!](https://medium.com/simply/state-management-with-react-hooks-and-context-api-at-10-lines-of-code-baf6be8302c) for more innformation.
 
 **Other usefull packages and tools will follow soon!**
 
