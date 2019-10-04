@@ -1,0 +1,10 @@
+{
+  "extends": "airbnb",
+  "plugins": ["react-hooks"],
+  "rules": {
+    "comma-dangle": "off",
+    "react/jsx-filename-extension": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error"
+  }
+}
