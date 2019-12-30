@@ -1,0 +1,19 @@
+{
+    "name": "@react-simply/test-utils",
+    "version": "1.0.0",
+    "description": "Utilities for unit and snapshot testing of React and Styled components",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "jest": "^24.8.0",
+        "jest-styled-components": "^6.3.1",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-test-renderer": "^16.8.6",
+        "styled-components": "^4.2.0"
+    }
+}
